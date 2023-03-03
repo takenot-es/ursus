@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About || Ursus Core Jekyll Theme</title>
 <meta name="description" content="Ursus is a jekyll theme that is barebones from the start. It's meant to be heavily modified as needed, but structured in a way that can be built on.">
+<link rel="icon" type="image/x-icon" href="/assets/imgs/favicon.png">
 
 <!-- Facebook integration -->
 <meta property="og:title" content="About || Ursus Core Jekyll Theme"/><meta property="og:url" content="/about/"/>
@@ -24,6 +25,8 @@
 <link rel="stylesheet" href="/assets/sass/theme.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+<link rel="stylesheet" href="https://s3.us-central-1.wasabisys.com/ursus/fonts/sentinel.css">
+<link rel="stylesheet" href="/assets/sass/ursus_theme.css">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script>
@@ -39,19 +42,19 @@ gtag('config', 'G-XXXXXXXXXX');
 <h1 class="meta-description">
 Ursus is a jekyll theme that is barebones from the start. It's meant to be heavily modified as needed, but structured in a way that can be built on.
 </h1>
-<div class="page-wrapper container">
+<div class="page-wrapper ">
 
-<header class="border-bottom">
+<header class="border-bottom container">
 <nav class="navbar navbar-expand-lg bg-white">
 <div class="container-fluid">
 <a class="navbar-brand" href="/">
-Ursus Core Jekyll Theme
+<img src="/assets/imgs/logo.svg" alt="Ursus Core Jekyll Theme">
 </a>
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 <span class="navbar-toggler-icon"></span>
 </button>
-<div class="collapse navbar-collapse" id="navbarNav">
-<ul class="navbar-nav">
+<div class=" collapse navbar-collapse" id="navbarNav">
+<ul class="ms-auto navbar-nav">
 
 
 <li class="nav-item">
@@ -61,7 +64,7 @@ Home
 </li>
 
 <li class="nav-item">
-<a class="nav-link active" aria-current="page" href="/about/">
+<a class="nav-link " aria-current="page" href="http://takenot.es">
 About
 </a>
 </li>
@@ -73,58 +76,7 @@ About
 </nav>
 </header>
 
-<header class="p-5 my-4 bg-light rounded-3">
-<div class="container-fluid">
-<div class="row">
-<div class="col-md-8 col-12">
-<h2 class="display-4 fw-bold">
-Made to tear apart.
-</h2>
-<p class="fs-4">
-This is a simple theme. It is made to kick off projects with a few steps ahead.
-</p>
 
-</div>
-</div>
-</div>
-</header><section class="py-5">
-<div class="container-fluid">
-<div class="row">
-<div class="col-md-8">
-<h3>
-What is the goal?
-</h3>
-<p class="lead">
-Ursus is a barebones Jekyll theme that comes with a predetermined file and folder structure that helps kick off projects to speed things along. 
-</p>
-<p>
-I found myself consistently building out the same structure over and over again. The problem is that nothing is really proprietary. The SASS files are the source files from getbootstrap.com. They're just set up to to automatically compile through the power of SASS and Jekyll.
-</p>
-<h3>
-Preloaded Components
-</h3>
-<p>
-Some components are preloaded into the theme and file structure. The bootstrap navigation is loaded into the components folder and referenced into the theme. Meta is already prebuilt in based on description tags on pages and the site.
-</p>
-<p>
-Things like Google Analytics are already referenced. To enable simply add the google tag ID into the field in <code>config</code> file. Scripts can be placed into the header, footer, or both. There's boolean options in the <code>config</code> to manage that. 
-</p>
-<p>
-To add scripts and styles go to the <code>enqueue</code> files in data and follow the file structure there. They'll loop into the <code>global/scripts</code> or <code>global/styles</code> files. So there's not need to find and enter those files. 
-</p>
-<p>
-Navigation links are held in the in <code>navigation</code> file in the <code>data</code> folder. These are pretty rudimentary and loop into the <code>navbar</code> and the <code>page-footer</code>. Social links on the other hand are all handled through a list in the <code>config</code> file.
-</p>
-<h3>
-Roadmap
-</h3>
-<p>
-I don't have one. I'll add to this as I can. If I'm doing something stupidly... who cares... it's free.
-</p>
-</div>
-</div>
-</div>
-</section>
 <!-- Primary Footer -->
 <footer class="py-5 bg-dark">
 <div class="container-fluid">
@@ -157,7 +109,7 @@ Home
 </li>
 
 <li>
-<a href="/about/" class="text-secondary text-decoration-none">
+<a href="http://takenot.es" class="text-secondary text-decoration-none">
 About
 </a>
 </li>

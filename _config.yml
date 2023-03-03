@@ -2,6 +2,8 @@ title: Ursus Core Jekyll Theme
 author: Ryan Underwood
 email: ryan@takenot.es
 description: Ursus is a jekyll theme that is barebones from the start. It's meant to be heavily modified as needed, but structured in a way that can be built on.
+favicon: /assets/imgs/favicon.png
+logo: /assets/imgs/logo.svg
 baseurl: "" # the subpath of your site, e.g. /blog
 url: ""
 copy_year: 2023

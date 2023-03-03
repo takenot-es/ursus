@@ -9,6 +9,7 @@
     {%- endif -%}
 </title>
 <meta name="description" content="{%- if page.description -%}{{- page.description -}}{%- else -%}{{- site.description -}}{%- endif -%}">
+<link rel="icon" type="image/x-icon" href="{{ site.favicon }}">
 
 <!-- Facebook integration -->
 <meta property="og:title" content="{%- if page.title -%}{{ page.title }} || {{ site.title }}{%- else -%}{{- site.title -}}{%- endif -%}"/>
