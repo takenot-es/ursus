@@ -1,0 +1,18 @@
+<section class="py-5">
+    <div class="container-fluid">
+        <div class="row">
+            {% for item in section.card_data %}
+            <div class="col-md-4 py-1">
+                {% include /components/ui-card.html 
+                card_image=item.card_image
+                card_title=item.card_title
+                card_text=item.card_text
+                card_link=item.card_link
+                card_button_text=item.card_button_text
+                card_button_color="primary"
+                %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

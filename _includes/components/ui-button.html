@@ -1,0 +1,12 @@
+<a href="{{ include.link }}" 
+    class="btn
+    {% if include.button_size %}
+        btn-{{include.button_size }}
+    {% endif %}
+    {%- if include.button_outline == true -%}
+        btn-outline-{{include.color }}
+    {%- else -%}
+        btn-{{ include.color }}
+    {%- endif -%}">
+    {{ include.text }}
+</a>

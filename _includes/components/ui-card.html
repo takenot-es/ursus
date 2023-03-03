@@ -1,0 +1,17 @@
+<div class="card">
+    <img src="{{ include.card_image}}" class="card-img-top" alt="{{ include.img_alt }}">
+    <div class="card-body">
+      <h5 class="card-title">
+        {{ include.card_title }}
+    </h5>
+      <p class="card-text">
+        {{ include.card_text }}
+    </p>
+      {% include /components/ui-button.html
+        link=include.card_link
+        text=include.card_button_text
+        button_outline=false
+        color=include.card_button_color
+        %}
+    </div>
+  </div>
