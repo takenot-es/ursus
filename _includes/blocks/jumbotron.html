@@ -3,11 +3,12 @@
         <div class="row">
             <div class="col-md-8 col-12">
                 <h2 class="display-4 fw-bold">
-                    {{ section.title }}
+                    {{ section.headline }}
                 </h2>
                 <p class="fs-4">
-                    {{ section.subtitle }}
+                    {{ section.subheadline }}
                 </p>
+                {% if section.has_button == true %}
                 <p class="mt-2">
                     {% include /components/ui-button.html
                         link=section.cta_link
@@ -17,6 +18,7 @@
                         text=section.cta_text
                     %}
                 </p>
+                {% endif %}
             </div>
         </div>
     </div>

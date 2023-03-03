@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>
     {%- if page.title -%}
-        {{- page.title -}} || {{- site.title -}}
+        {{- page.title }} || {{ site.title -}}
     {%- else -%}
         {{- site.title -}}
     {%- endif -%}
@@ -11,7 +11,7 @@
 <meta name="description" content="{%- if page.description -%}{{- page.description -}}{%- else -%}{{- site.description -}}{%- endif -%}">
 
 <!-- Facebook integration -->
-<meta property="og:title" content="{%- if page.title -%}{{- page.title -}} || {{- site.title -}}{%- else -%}{{- site.title -}}{%- endif -%}"/>
+<meta property="og:title" content="{%- if page.title -%}{{ page.title }} || {{ site.title }}{%- else -%}{{- site.title -}}{%- endif -%}"/>
 {%- if page.featured_image -%}<meta property="og:image" content="{{- page.featured_image -}}"/>{%- endif -%}
 <meta property="og:url" content="{{ site.baseurl }}{{- page.url -}}"/>
 <meta property="og:type" content="article">

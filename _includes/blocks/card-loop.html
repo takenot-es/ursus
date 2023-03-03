@@ -1,4 +1,20 @@
 <section class="py-5">
+    {% if section.headline %}
+    <div class="container-fluid pb-5">
+        <div class="row">
+            <div class="col-md-10">
+                <h2>
+                    {{ section.headline }}
+                </h2>
+                {% if section.subheadline %}
+                <p class="fs-5">
+                    {{ section.subheadline }}
+                </p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endif %}
     <div class="container-fluid">
         <div class="row">
             {% for item in section.card_data %}
